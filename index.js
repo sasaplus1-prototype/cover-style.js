@@ -1,16 +1,12 @@
 'use strict';
 
 function get(params) {
-  var element = params.element,
-      elementWidth = parseFloat(params.elementWidth),
+  var elementWidth = parseFloat(params.elementWidth),
       elementHeight = parseFloat(params.elementHeight),
       containerWidth = parseFloat(params.containerWidth),
       containerHeight = parseFloat(params.containerHeight),
       elementRatio, containerRatio, t, l, w, h, mt, ml;
 
-  if (!element || element.nodeType !== 1) {
-    throw new TypeError('element must be an Element node');
-  }
   if (isNaN(elementWidth) || isNaN(elementHeight)) {
     throw new Error('elementWidth or elementHeight are NaN');
   }
