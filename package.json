@@ -1,0 +1,19 @@
+{
+  "name": "cover-style",
+  "version": "0.0.0",
+  "author": "sasa+1 <sasaplus1@gmail.com>",
+  "description": "get pseudo style for 'background-size: cover'",
+  "main": "./index.js",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sasaplus1-prototype/cover-style.js.git"
+  },
+  "scripts": {
+    "build": "npm run compile && npm run minify",
+    "compile": "npm run webpack -- --output-file cover-style.js",
+    "minify": "npm run webpack -- --optimize-minimize --output-file cover-style.min.js",
+    "webpack": "webpack --colors --display-error-details --progress"
+  }
+}
